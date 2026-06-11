@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import CalendarMenu from "../components/CalendarMenu";
 
 export default function Home() {
   return (
@@ -51,10 +53,10 @@ export default function Home() {
           <p className="font-label-caps text-primary">JUNIO 2026</p>
         </div>
         {/* Col 2 */}
-        <div className="p-margin-mobile bg-white">
+        <div className="p-margin-mobile bg-white overflow-hidden">
           <p className="font-label-caps text-[10px] text-secondary mb-2">UBICACIÓN</p>
-          <p className="font-headline-md leading-none">AUDITORIO</p>
-          <p className="font-label-caps text-primary">JUAN PABLO II</p>
+          <p className="font-headline-md text-[24px] lg:text-headline-md leading-none break-words">AUDITORIO</p>
+          <p className="font-label-caps text-primary mt-1">JUAN PABLO II</p>
           <div className="font-body-md mt-1">INSTITUTO LA PAZ</div>
         </div>
         {/* Full Width Details */}
@@ -74,38 +76,60 @@ export default function Home() {
               <p className="font-label-caps text-[10px] text-secondary">DIRECCIÓN COMPLETA</p>
               <p className="font-technical-sm">Av. Universidad, San Javier, 76020 Santiago de Querétaro, Qro.</p>
               
-              <div className="mt-4">
-                <p className="font-label-caps text-[10px] text-secondary mb-2">AGENDAR EN TU CALENDARIO</p>
-                <div className="flex flex-wrap gap-2">
-                  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=QUINTESSENCIA+-+Hanns+Myhulots&dates=20260626T233000Z/20260627T013000Z&details=Conferencia+Magistral+por+Hanns+Myhulots&location=Av.+Universidad,+San+Javier,+76020+Santiago+de+Querétaro,+Qro." target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-[10px] font-label-caps border-2 border-on-surface px-3 py-2 hover:bg-on-surface hover:text-white transition-colors bg-white">
-                    <span className="material-symbols-outlined text-[14px]">calendar_today</span>
-                    GOOGLE
-                  </a>
-                  <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260626T233000Z%0ADTEND:20260627T013000Z%0ASUMMARY:QUINTESSENCIA%20-%20Hanns%20Myhulots%0ADESCRIPTION:Conferencia%20Magistral%20por%20Hanns%20Myhulots%0ALOCATION:Av.%20Universidad%2C%20San%20Javier%2C%2076020%20Santiago%20de%20Querétaro%2C%20Qro.%0AEND:VEVENT%0AEND:VCALENDAR" download="quintessencia.ics" className="flex items-center gap-1 text-[10px] font-label-caps border-2 border-on-surface px-3 py-2 hover:bg-on-surface hover:text-white transition-colors bg-white">
-                    <span className="material-symbols-outlined text-[14px]">event</span>
-                    APPLE / OUTLOOK
-                  </a>
-                  <a href="https://outlook.office.com/calendar/0/deeplink/compose?subject=QUINTESSENCIA+-+Hanns+Myhulots&startdt=2026-06-26T23:30:00Z&enddt=2026-06-27T01:30:00Z&body=Conferencia+Magistral+por+Hanns+Myhulots&location=Av.+Universidad,+San+Javier,+76020+Santiago+de+Querétaro,+Qro." target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-[10px] font-label-caps border-2 border-on-surface px-3 py-2 hover:bg-on-surface hover:text-white transition-colors bg-white">
-                    <span className="material-symbols-outlined text-[14px]">cloud</span>
-                    OFFICE 365
-                  </a>
-                </div>
-              </div>
+              <CalendarMenu />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Logistics Preview / Call to Action */}
-      <section className="p-margin-mobile bg-on-surface text-background text-center py-16">
-        <h4 className="font-headline-md mb-4 leading-tight">PREPÁRATE PARA LA EXPERIENCIA</h4>
-        <p className="font-body-md opacity-80 mb-8 max-w-xs mx-auto">Asegura tu lugar y consulta los detalles logísticos para tu llegada al Auditorio.</p>
+      {/* Purchase Process */}
+      <section className="px-margin-mobile pt-16 pb-32 bg-on-surface text-background">
+        <h4 className="font-headline-md mb-8 leading-tight text-center text-primary">PROCESO DE COMPRA</h4>
+        
+        <div className="flex flex-col gap-6 mb-12">
+          {/* Step 1 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">1</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">CONTÁCTANOS</span>
+              <span className="font-technical-sm opacity-80">Usa nuestros botones de WhatsApp para iniciar tu registro y verificar disponibilidad.</span>
+            </div>
+          </div>
+          
+          {/* Step 2 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">2</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">PAGA</span>
+              <span className="font-technical-sm opacity-80">Transfiere tu donativo ($100 MXN) a nuestra cuenta oficial.</span>
+            </div>
+          </div>
+
+          {/* Step 2.1 */}
+          <div className="flex gap-4 items-start ml-8">
+            <span className="font-display-2xl text-primary text-[24px] leading-none">2.1</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1 text-bone-white">GUARDA EL COMPROBANTE</span>
+              <span className="font-technical-sm opacity-80">Conserva el comprobante que te enviamos e identifícate bien con tu nombre en el chat.</span>
+            </div>
+          </div>
+          
+          {/* Step 3 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">3</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">RECOGE TU PULSERA</span>
+              <span className="font-technical-sm opacity-80">Acude a cualquiera de nuestros puntos de entrega físicos con tu confirmación en WhatsApp para recibir tu acceso.</span>
+            </div>
+          </div>
+        </div>
+
         <div className="flex justify-center gap-4">
-          <a href="https://maps.google.com/?q=Instituto+La+Paz+Queretaro" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-primary hover:bg-white group transition-colors">
-            <span className="material-symbols-outlined text-white group-hover:text-primary transition-colors">location_on</span>
+          <a href="https://www.google.com/maps/place/Auditorio+Juan+Pablo+II+Instituto+La+Paz/@20.5993921,-100.3802169,744m/data=!3m1!1e3!4m6!3m5!1s0x85d35b37365d1131:0x74e68dbcef1d429d!8m2!3d20.60003!4d-100.3775252!16s%2Fg%2F11f60tq528?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
+            <span className="material-symbols-outlined text-on-surface group-hover:text-white transition-colors">location_on</span>
           </a>
-          <a href="https://wa.me/524611501690?text=Hola,%20me%20interesa%20adquirir%20un%20acceso%20general%20para%20QUINTESSENCIA" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
-            <span className="material-symbols-outlined text-on-surface group-hover:text-white transition-colors">payments</span>
+          <a href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
+            <span className="material-symbols-outlined text-on-surface group-hover:text-white transition-colors">chat</span>
           </a>
         </div>
       </section>
