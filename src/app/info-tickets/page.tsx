@@ -1,18 +1,24 @@
 import Image from "next/image";
+import PaymentMenu from "@/components/PaymentMenu";
 
-export default function SobreNosotros() {
+export const metadata = {
+  title: "Info & Tickets | QUINTESSENCIA",
+  description: "Detalles del evento, puntos de entrega y proceso de compra.",
+};
+
+export default function InfoTickets() {
   return (
     <>
       {/* Header Image & Slogan */}
       <div className="border-b-4 border-on-surface mb-10 overflow-hidden bg-on-surface" id="hero">
         <img 
           alt="Biography Header" 
-          className="w-full h-[60vh] md:h-[70vh] object-cover object-top" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX3RelXZWbpxSO0WdgwRLBBxvmhrPIl2WIL8mv72Nt6X2rf7x7dO4Ogsr2y_AOq1ThG2HM-Pr1tNSZJTxB75uaXZ0DEAWWjXRK3YvuVi-N6zgCaljJ0R8NiFXzWnanO60TM6a-S5LSa7vhpsW28vsu4mblhPaT2k6YVExBd604i6l0oqVGp4eZkD01Hm8AUyHCg1Q7SBSSd_v_GXrxKyqQYyxscCYDO5XpYDhWaHzYJgdxOTtmpUhr8fzcdYM_d1BQf1C02wD5gUQ" 
+          className="w-full h-[60vh] md:h-[70vh] object-cover object-center" 
+          src="/hero-info.jpeg" 
         />
         <div className="p-6 bg-on-surface text-white">
           <h2 className="font-display-2xl text-[40px] uppercase leading-none tracking-tighter italic">
-            MI HISTORIA PUEDE CAMBIAR TU HISTORIA
+            Mi testimonio. Mi propósito. Mi impacto.
           </h2>
         </div>
       </div>
@@ -25,13 +31,25 @@ export default function SobreNosotros() {
         </div>
       </section>
 
-      {/* Event Details Section */}
+      {/* Event Details & Payment */}
       <section className="p-margin-mobile bg-surface-container border-b-4 border-on-surface">
         <h3 className="font-label-caps text-primary mb-2">EL PROPÓSITO</h3>
         <h4 className="font-headline-md mb-4 leading-none uppercase">Detalles del Evento</h4>
         <p className="font-body-md border-t-2 border-on-surface pt-4">
           QUINTESSENCIA es un encuentro diseñado para confrontar nuestra realidad y despertar el potencial latente. El objetivo principal es inspirar a las personas a encontrar esperanza y amor en sus vidas, demostrándose que es posible superar las adversidades y las adicciones.
         </p>
+        
+        {/* Payment Modal Button */}
+        <div className="mt-8 border-t-2 border-on-surface pt-6">
+          <h4 className="font-headline-md mb-2 uppercase text-on-surface">¿Cómo obtengo mis pulseras?</h4>
+          <div className="font-body-md mb-6 flex flex-col gap-2">
+            <p><strong>1. CONTÁCTANOS:</strong> Usa los botones de WhatsApp de abajo para iniciar tu registro y verificar disponibilidad.</p>
+            <p><strong>2. PAGA:</strong> La cooperación es de $100 MXN. Haz clic en el botón de abajo para transferir a nuestra cuenta oficial.</p>
+            <p className="ml-4"><strong>2.1. GUARDA EL COMPROBANTE:</strong> Conserva el comprobante e identifícate con tu nombre en el chat.</p>
+            <p><strong>3. RECOGE TU PULSERA:</strong> Acude a tu punto de entrega con tu confirmación.</p>
+          </div>
+          <PaymentMenu />
+        </div>
       </section>
 
       {/* Logistic Points */}
@@ -45,23 +63,23 @@ export default function SobreNosotros() {
               name: "Parroquia de la Sagrada Familia", 
               note: "Entrega en el jardín de enfrente (parque de la parroquia)",
               hours: "Días 12, 15, 16, 19 y 23 de 7:15 pm a 9:00 pm",
-              chat: "https://wa.me/524461231497", 
-              map: "https://maps.google.com/?q=Parroquia+de+la+Sagrada+Familia" 
+              chat: "https://wa.me/524461231497?text=Hola%20Alan,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20recoger%20en%20la%20Parroquia%20de%20la%20Sagrada%20Familia%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?", 
+              map: "https://www.google.com/maps?q=Parroquia+de+la+Sagrada+Familia" 
             },
             { 
               zone: "CORREGIDORA", 
               name: "Stacia Towers Corregidora", 
               note: "Junto a deportiva UAQ (Entrega en caseta)",
               hours: "L-V de 1:00 pm a 5:00 pm",
-              chat: "https://walink.co/baowsb", 
-              map: "https://maps.google.com/?cid=8974638117118952670" 
+              chat: "https://wa.me/524613787255?text=Hola%20Rodrigo,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20recoger%20en%20Stacia%20Towers%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?", 
+              map: "https://www.google.com/maps/place/Stacia+Towers+Corregidora/@20.553779,-100.423823,16.53z/data=!4m6!3m5!1s0x85d3451a5b1c5c7f:0x7c8c51d15e8e44de!8m2!3d20.5538326!4d-100.4226077!16s%2Fg%2F11pvlq89_k?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" 
             },
             { 
               zone: "ZONA NORTE", 
               name: "Carlota (Dptos Manahal)", 
               note: "Condominio Mahjabi dpt. X5",
               hours: "L-V de 2:00 pm a 4:00 pm",
-              chat: "https://walink.co/pbidqy", 
+              chat: "https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20recoger%20en%20Condominio%20Mahjabi,%20Carlota%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?", 
               map: "https://maps.app.goo.gl/1DwiCD4bjCB8yd3j9" 
             },
             { 
@@ -97,16 +115,27 @@ export default function SobreNosotros() {
       </section>
 
       {/* Sponsorship */}
-      <section className="p-margin-mobile bg-white pt-8 pb-12">
-        <h3 className="font-headline-md mb-4 uppercase text-on-surface">Súmate a la Causa</h3>
-        <p className="font-body-md mb-6">Estamos buscando patrocinadores para este evento. Tu cooperación no es solo un patrocinio, es una semilla de esperanza en la vida de cientos de jóvenes y tu empresa podrá anunciarse entre la lista de patrocinadores dentro del evento.</p>
+      <section className="px-margin-mobile bg-white pt-8 pb-32">
+        <h3 className="font-headline-md mb-2 uppercase text-on-surface">Súmate a la Causa</h3>
+        <p className="font-label-caps opacity-60 mb-2">OPORTUNIDADES DE PATROCINIO</p>
+        <p className="font-display-2xl text-[24px] mb-4 text-primary leading-none uppercase">Nuestra meta es de $40,000 MXN</p>
+        <p className="font-body-md mb-4">
+          Buscamos patrocinadores que nos ayuden a cubrir los gastos operativos del evento y hacerlo accesible. 
+          El apoyo puede realizarse en <strong>efectivo o en especie</strong>, y será destinado a cubrir:
+        </p>
+        <ul className="font-body-md mb-8 ml-6 list-disc opacity-80 flex flex-col gap-1">
+          <li>Alimentos/catering</li>
+          <li>Hospedaje (1 noche)</li>
+          <li>Transporte (Aeropuerto-Recinto)</li>
+          <li>Materiales impresos</li>
+        </ul>
         <div className="flex flex-col gap-4">
-          <a href="tel:+524611501690" className="flex items-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
-            <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">call</span>
+          <a href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
+            <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">chat</span>
             <span className="font-technical-sm">461 150 1690</span>
           </a>
-          <a href="tel:+524613787255" className="flex items-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
-            <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">call</span>
+          <a href="https://wa.me/524613787255?text=Hola%20Rodrigo,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
+            <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">chat</span>
             <span className="font-technical-sm">461 378 7255</span>
           </a>
         </div>

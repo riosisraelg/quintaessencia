@@ -20,15 +20,15 @@ export default function BottomNav() {
         <span className="font-label-caps">HOME</span>
       </Link>
       <Link 
-        href="/sobre-nosotros"
+        href="/info-tickets"
         className={`flex flex-col items-center justify-center p-2 w-1/2 h-full transition-colors ${
-          pathname === "/sobre-nosotros" 
+          pathname === "/info-tickets" 
             ? "bg-on-surface text-bone-white" 
             : "text-on-primary hover:bg-on-surface hover:text-bone-white"
         }`}
       >
-        <span className="material-symbols-outlined mb-1">info</span>
-        <span className="font-label-caps">SOBRE NOSOTROS</span>
+        <span className="material-symbols-outlined mb-1">local_activity</span>
+        <span className="font-label-caps">INFO Y TICKETS</span>
       </Link>
     </nav>
   );
