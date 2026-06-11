@@ -23,6 +23,9 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "QUINTESSENCIA",
   description: "Conferencia Magistral",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
