@@ -31,30 +31,33 @@ export default function InfoTickets() {
         </div>
       </section>
 
-      {/* Event Details & Payment */}
+      {/* Event Details */}
       <section className="p-margin-mobile bg-surface-container border-b-4 border-on-surface">
-        <h3 className="font-label-caps text-primary mb-2">EL PROPÓSITO</h3>
-        <h4 className="font-headline-md mb-4 leading-none uppercase">Detalles del Evento</h4>
-        <p className="font-body-md border-t-2 border-on-surface pt-4">
-          QUINTESSENCIA es un encuentro diseñado para confrontar nuestra realidad y despertar el potencial latente. El objetivo principal es inspirar a las personas a encontrar esperanza y amor en sus vidas, demostrándose que es posible superar las adversidades y las adicciones.
-        </p>
-        
-        {/* Payment Modal Button */}
-        <div className="mt-8 border-t-2 border-on-surface pt-6">
-          <h4 className="font-headline-md mb-2 uppercase text-on-surface">¿Cómo obtengo mis pulseras?</h4>
-          <div className="font-body-md mb-6 flex flex-col gap-2">
-            <p><strong>1. CONTÁCTANOS:</strong> Usa los botones de WhatsApp de abajo para iniciar tu registro y verificar disponibilidad.</p>
-            <p><strong>2. PAGA:</strong> La cooperación es de $100 MXN. Haz clic en el botón de abajo para transferir a nuestra cuenta oficial.</p>
-            <p className="ml-4"><strong>2.1. GUARDA EL COMPROBANTE:</strong> Conserva el comprobante e identifícate con tu nombre en el chat.</p>
-            <p><strong>3. RECOGE TU PULSERA:</strong> Acude a tu punto de entrega con tu confirmación.</p>
-          </div>
-          <PaymentMenu />
+        <div className="bg-white border-2 border-on-surface p-4 md:p-6 shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
+          <span className="font-label-caps text-primary text-[10px] uppercase font-bold tracking-widest block mb-1">EL PROPÓSITO</span>
+          <h4 className="font-display-2xl text-[28px] md:text-[36px] uppercase leading-none mb-4">DETALLES DEL EVENTO</h4>
+          <p className="font-body-md border-t-2 border-on-surface pt-4">
+            QUINTESSENCIA es un encuentro diseñado para confrontar nuestra realidad y despertar el potencial latente. El objetivo principal es inspirar a las personas a encontrar esperanza y amor en sus vidas, demostrándose que es posible superar las adversidades y las adicciones.
+          </p>
         </div>
       </section>
 
       {/* Logistic Points */}
       <section className="p-margin-mobile border-b-4 border-on-surface bg-white" id="logistics">
-        <h3 className="font-headline-md mb-6 uppercase text-primary">Puntos de Entrega</h3>
+        <h3 className="font-display-2xl text-[32px] md:text-[40px] uppercase leading-none inline-block border-b-4 border-on-surface mb-8 pb-1 text-on-surface">PUNTOS DE ENTREGA</h3>
+        
+        {/* Payment Process */}
+        <div className="mb-10 p-4 border-2 border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
+          <h4 className="font-headline-md mb-4 uppercase text-primary">¿Cómo obtengo mis pulseras?</h4>
+          <div className="font-body-md mb-6 flex flex-col gap-3">
+            <p><strong>1. CONTÁCTANOS:</strong> Usa los botones de WhatsApp de abajo para iniciar tu registro y verificar disponibilidad.</p>
+            <p><strong>2. PAGA:</strong> La cooperación es de $100 MXN. Haz clic en el botón de abajo para transferir a nuestra cuenta oficial.</p>
+            <p className="ml-4 opacity-80"><strong>2.1. GUARDA EL COMPROBANTE:</strong> Conserva el comprobante e identifícate con tu nombre en el chat.</p>
+            <p><strong>3. RECOGE TU PULSERA:</strong> Acude a tu punto de entrega con tu confirmación.</p>
+          </div>
+          <PaymentMenu />
+        </div>
+
         <div className="flex flex-col border-t-2 border-on-surface">
           {/* Delivery Points */}
           {[
