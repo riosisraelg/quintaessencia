@@ -53,8 +53,9 @@ export default function Home() {
         {/* Col 2 */}
         <div className="p-margin-mobile bg-white">
           <p className="font-label-caps text-[10px] text-secondary mb-2">UBICACIÓN</p>
-          <p className="font-headline-md leading-none">UNIVERSIDAD</p>
-          <p className="font-label-caps text-primary">SANTIAGO DE QUERÉTARO</p>
+          <p className="font-headline-md leading-none">AUDITORIO</p>
+          <p className="font-label-caps text-primary">JUAN PABLO II</p>
+          <div className="font-body-md mt-1">INSTITUTO LA PAZ</div>
         </div>
         {/* Full Width Details */}
         <div className="col-span-2 p-margin-mobile border-t-2 border-on-surface bg-surface-container">
