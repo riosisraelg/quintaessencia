@@ -46,7 +46,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="pt-[60px] pb-24 flex-grow">
+        <main className="pt-[60px] flex-grow">
           {children}
         </main>
 
