@@ -25,7 +25,7 @@ export default function InfoTickets() {
 
       {/* Biography Section */}
       <section className="p-margin-mobile border-b-4 border-on-surface bg-white" id="biography">
-        <h3 className="font-headline-md mb-6 inline-block uppercase text-primary">¿Quién es Hanns?</h3>
+        <h3 className="font-headline-md mb-6 inline-block uppercase text-primary">El Rostro de la Resiliencia</h3>
         <div className="drop-cap font-body-lg leading-relaxed text-justify">
           Es un reconocido conferencista internacional, escritor y activista social. Su historia es un testimonio de resiliencia y superación personal. Durante su juventud en Europa, se vio envuelto en un entorno destructivo marcado por las adicciones severas a las drogas y la vida en las calles. Debido a una sobredosis y a las condiciones extremas que vivió en esa etapa, sufrió una grave complicación médica que derivó en la amputación de ambas piernas.
         </div>
@@ -35,7 +35,7 @@ export default function InfoTickets() {
       <section className="p-margin-mobile bg-surface-container border-b-4 border-on-surface">
         <div className="bg-white border-2 border-on-surface p-4 md:p-6 shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
           <span className="font-label-caps text-primary text-[10px] uppercase font-bold tracking-widest block mb-1">EL PROPÓSITO</span>
-          <h4 className="font-display-2xl text-[28px] md:text-[36px] uppercase leading-none mb-4">DETALLES DEL EVENTO</h4>
+          <h4 className="font-display-2xl text-[28px] md:text-[36px] uppercase leading-none mb-4">UNA EXPERIENCIA PARA SANAR</h4>
           <p className="font-body-md border-t-2 border-on-surface pt-4">
             QUINTESSENCIA es un encuentro diseñado para confrontar nuestra realidad y despertar el potencial latente. El objetivo principal es inspirar a las personas a encontrar esperanza y amor en sus vidas, demostrándose que es posible superar las adversidades y las adicciones.
           </p>
@@ -44,11 +44,11 @@ export default function InfoTickets() {
 
       {/* Logistic Points */}
       <section className="p-margin-mobile border-b-4 border-on-surface bg-white" id="logistics">
-        <h3 className="font-display-2xl text-[32px] md:text-[40px] uppercase leading-none inline-block border-b-4 border-on-surface mb-8 pb-1 text-on-surface">PUNTOS DE ENTREGA</h3>
+        <h3 className="font-display-2xl text-[32px] md:text-[40px] uppercase leading-none inline-block border-b-4 border-on-surface mb-8 pb-1 text-on-surface">EL COMIENZO DEL CAMINO</h3>
         
         {/* Payment Process */}
         <div className="mb-10 p-4 border-2 border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
-          <h4 className="font-headline-md mb-4 uppercase text-primary">¿Cómo obtengo mis pulseras?</h4>
+          <h4 className="font-headline-md mb-4 uppercase text-primary">Tu Pasaporte al Evento</h4>
           <div className="font-body-md mb-6 flex flex-col gap-3">
             <p><strong>1. CONTÁCTANOS:</strong> Usa los botones de WhatsApp de abajo para iniciar tu registro y verificar disponibilidad.</p>
             <p><strong>2. PAGA:</strong> La cooperación es de $100 MXN. Haz clic en el botón de abajo para transferir a nuestra cuenta oficial.</p>
@@ -119,8 +119,8 @@ export default function InfoTickets() {
 
       {/* Sponsorship */}
       <section className="px-margin-mobile bg-white pt-8 pb-32">
-        <h3 className="font-headline-md mb-2 uppercase text-on-surface">Súmate a la Causa</h3>
-        <p className="font-label-caps opacity-60 mb-2">OPORTUNIDADES DE PATROCINIO</p>
+        <h3 className="font-headline-md mb-2 uppercase text-on-surface">Únete a nuestra Historia</h3>
+        <p className="font-label-caps opacity-60 mb-2">SÉ EL MILAGRO DE ALGUIEN MÁS</p>
         <p className="font-display-2xl text-[24px] mb-4 text-primary leading-none uppercase">Nuestra meta es de $40,000 MXN</p>
         <p className="font-body-md mb-4">
           Buscamos patrocinadores que nos ayuden a cubrir los gastos operativos del evento y hacerlo accesible. 

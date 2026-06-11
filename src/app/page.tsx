@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 h-full flex flex-col justify-end p-margin-mobile pb-12">
           <div className="space-y-0">
-            <span className="bg-primary text-on-primary font-label-caps px-2 py-1 mb-4 inline-block">CONFERENCIA MAGISTRAL</span>
+            <span className="bg-primary text-on-primary font-label-caps px-2 py-1 mb-4 inline-block">UNA HISTORIA QUE CAMBIARÁ LA TUYA</span>
             <h2 className="font-headline-md text-on-surface leading-none block">HANNS</h2>
             <h2 className="font-headline-md text-primary leading-none block">MYHULOTS</h2>
             <p className="font-technical-sm mt-4 max-w-[280px] border-l-2 border-primary pl-4">
@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* Purchase Process */}
       <section className="px-margin-mobile pt-16 pb-32 bg-on-surface text-background">
-        <h4 className="font-headline-md mb-8 leading-tight text-center text-primary">PROCESO DE COMPRA</h4>
+        <h4 className="font-headline-md mb-8 leading-tight text-center text-primary">EL PRIMER PASO DE TU TRANSFORMACIÓN</h4>
         
         <div className="flex flex-col gap-6 mb-12">
           {/* Step 1 */}
