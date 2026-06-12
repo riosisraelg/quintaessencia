@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import CalendarMenu from "../components/CalendarMenu";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -128,9 +129,9 @@ export default function Home() {
           <a href="https://www.google.com/maps/place/Auditorio+Juan+Pablo+II+Instituto+La+Paz/@20.5993921,-100.3802169,744m/data=!3m1!1e3!4m6!3m5!1s0x85d35b37365d1131:0x74e68dbcef1d429d!8m2!3d20.60003!4d-100.3775252!16s%2Fg%2F11f60tq528?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
             <span className="material-symbols-outlined text-on-surface group-hover:text-white transition-colors">location_on</span>
           </a>
-          <a href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?" target="_blank" rel="noopener noreferrer" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
+          <WhatsAppButton href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20solicitar%20pulseras%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20compartir%20los%20m%C3%A9todos%20de%20pago%20y%20pasos%20a%20seguir?" className="w-12 h-12 brutalist-border flex items-center justify-center bg-white hover:bg-primary group transition-colors">
             <span className="material-symbols-outlined text-on-surface group-hover:text-white transition-colors">chat</span>
-          </a>
+          </WhatsAppButton>
         </div>
       </section>
     </>

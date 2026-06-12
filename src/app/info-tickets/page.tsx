@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PaymentMenu from "@/components/PaymentMenu";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata = {
   title: "Info & Tickets | QUINTESSENCIA",
@@ -102,9 +103,9 @@ export default function InfoTickets() {
               </div>
               <div className="flex gap-4 shrink-0 mt-2 md:mt-0">
                 {point.chat && (
-                  <a href={point.chat} target="_blank" rel="noopener noreferrer" className="p-2 border-2 border-on-surface group-hover:border-bone-white transition-colors bg-white group-hover:bg-on-surface text-on-surface group-hover:text-bone-white self-center">
+                  <WhatsAppButton href={point.chat} className="p-2 border-2 border-on-surface group-hover:border-bone-white transition-colors bg-white group-hover:bg-on-surface text-on-surface group-hover:text-bone-white self-center">
                     <span className="material-symbols-outlined align-middle">chat</span>
-                  </a>
+                  </WhatsAppButton>
                 )}
                 {point.map && (
                   <a href={point.map} target="_blank" rel="noopener noreferrer" className="p-2 border-2 border-on-surface group-hover:border-bone-white transition-colors bg-white group-hover:bg-on-surface text-on-surface group-hover:text-bone-white self-center">
@@ -138,20 +139,20 @@ export default function InfoTickets() {
               <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">call</span>
               <span className="font-technical-sm">Llamar</span>
             </a>
-            <a href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
+            <WhatsAppButton href="https://wa.me/524611501690?text=Hola%20Sebastian,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" className="flex-1 flex items-center justify-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
               <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">chat</span>
               <span className="font-technical-sm">461 150 1690</span>
-            </a>
+            </WhatsAppButton>
           </div>
           <div className="flex gap-4">
             <a href="tel:+524613787255" className="flex-1 flex items-center justify-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
               <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">call</span>
               <span className="font-technical-sm">Llamar</span>
             </a>
-            <a href="https://wa.me/524613787255?text=Hola%20Rodrigo,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
+            <WhatsAppButton href="https://wa.me/524613787255?text=Hola%20Rodrigo,%20mi%20nombre%20es%20[TU%20NOMBRE].%20Me%20interesa%20sumarme%20como%20patrocinador%20para%20la%20conferencia%20de%20Hanns%20organizada%20por%20Quintessencia.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n?" className="flex-1 flex items-center justify-center gap-4 bg-background p-4 border-2 border-on-surface hover:bg-on-surface hover:text-bone-white transition-colors group">
               <span className="material-symbols-outlined text-primary group-hover:text-bone-white transition-colors">chat</span>
               <span className="font-technical-sm">461 378 7255</span>
-            </a>
+            </WhatsAppButton>
           </div>
         </div>
       </section>
