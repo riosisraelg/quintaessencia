@@ -24,43 +24,58 @@ export default function InfoTickets() {
         </div>
       </div>
 
-      {/* Biography Section */}
-      <section className="p-margin-mobile border-b-4 border-on-surface bg-white" id="biography">
-        <h3 className="font-headline-md mb-6 inline-block uppercase text-primary">El Rostro de la Resiliencia</h3>
-        <div className="drop-cap font-body-lg leading-relaxed text-justify">
-          Es un reconocido conferencista internacional, escritor y activista social. Su historia es un testimonio de resiliencia y superación personal. Durante su juventud en Europa, se vio envuelto en un entorno destructivo marcado por las adicciones severas a las drogas y la vida en las calles. Debido a una sobredosis y a las condiciones extremas que vivió en esa etapa, sufrió una grave complicación médica que derivó en la amputación de ambas piernas.
-        </div>
-      </section>
+      {/* Purchase Process */}
+      <section className="px-margin-mobile pt-8 pb-16 bg-on-surface text-background border-b-4 border-on-surface">
+        <h4 className="font-headline-md mb-8 leading-tight text-center text-primary">EL PRIMER PASO DE TU TRANSFORMACIÓN</h4>
+        
+        <div className="flex flex-col gap-6 mb-12">
+          {/* Step 1 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">1</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">CONTÁCTANOS</span>
+              <span className="font-technical-sm opacity-80">Usa nuestros botones de WhatsApp para iniciar tu registro y verificar disponibilidad.</span>
+            </div>
+          </div>
+          
+          {/* Step 2 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">2</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">PAGA</span>
+              <span className="font-technical-sm opacity-80">Transfiere tu donativo ($100 MXN) a nuestra cuenta oficial.</span>
+            </div>
+          </div>
 
-      {/* Event Details */}
-      <section className="p-margin-mobile bg-surface-container border-b-4 border-on-surface">
-        <div className="bg-white border-2 border-on-surface p-4 md:p-6 shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
-          <span className="font-label-caps text-primary text-[10px] uppercase font-bold tracking-widest block mb-1">EL PROPÓSITO</span>
-          <h4 className="font-display-2xl text-[28px] md:text-[36px] uppercase leading-none mb-4">UNA EXPERIENCIA PARA SANAR</h4>
-          <p className="font-body-md border-t-2 border-on-surface pt-4">
-            QUINTESSENCIA es un encuentro diseñado para confrontar nuestra realidad y despertar el potencial latente. El objetivo principal es inspirar a las personas a encontrar esperanza y amor en sus vidas, demostrándose que es posible superar las adversidades y las adicciones.
-          </p>
+          {/* Step 2.1 */}
+          <div className="flex gap-4 items-start ml-8">
+            <span className="font-display-2xl text-primary text-[24px] leading-none">2.1</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1 text-bone-white">GUARDA EL COMPROBANTE</span>
+              <span className="font-technical-sm opacity-80">Conserva el comprobante que te enviamos e identifícate bien con tu nombre en el chat.</span>
+            </div>
+          </div>
+          
+          {/* Step 3 */}
+          <div className="flex gap-4 items-start">
+            <span className="font-display-2xl text-primary text-[40px] leading-none">3</span>
+            <div className="flex flex-col pt-1">
+              <span className="font-label-caps mb-1">RECOGE TU PULSERA</span>
+              <span className="font-technical-sm opacity-80">Acude a cualquiera de nuestros puntos de entrega físicos con tu confirmación en WhatsApp para recibir tu acceso.</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="bg-surface-container text-on-surface p-4 border-2 border-bone-white">
+           <PaymentMenu />
         </div>
       </section>
 
       {/* Logistic Points */}
-      <section className="p-margin-mobile border-b-4 border-on-surface bg-white" id="logistics">
-        <h3 className="font-display-2xl text-[32px] md:text-[40px] uppercase leading-none inline-block border-b-4 border-on-surface mb-8 pb-1 text-on-surface">EL COMIENZO DEL CAMINO</h3>
+      <section className="p-margin-mobile border-b-4 border-on-surface bg-white pt-12 pb-16" id="logistics">
+        <h3 className="font-display-2xl text-[32px] md:text-[40px] uppercase leading-none inline-block border-b-4 border-on-surface mb-8 pb-1 text-on-surface">PUNTOS DE ENTREGA</h3>
         
-        {/* Payment Process */}
-        <div className="mb-10 p-4 border-2 border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)]">
-          <h4 className="font-headline-md mb-4 uppercase text-primary">Tu Pasaporte al Evento</h4>
-          <div className="font-body-md mb-6 flex flex-col gap-3">
-            <p><strong>1. CONTÁCTANOS:</strong> Usa los botones de WhatsApp de abajo para iniciar tu registro y verificar disponibilidad.</p>
-            <p><strong>2. PAGA:</strong> La cooperación es de $100 MXN. Haz clic en el botón de abajo para transferir a nuestra cuenta oficial.</p>
-            <p className="ml-4 opacity-80"><strong>2.1. GUARDA EL COMPROBANTE:</strong> Conserva el comprobante e identifícate con tu nombre en el chat.</p>
-            <p><strong>3. RECOGE TU PULSERA:</strong> Acude a tu punto de entrega con tu confirmación.</p>
-          </div>
-          <PaymentMenu />
-        </div>
-
         <div className="flex flex-col border-t-2 border-on-surface">
-          {/* Delivery Points */}
           {[
             { 
               zone: "CENTRO", 
@@ -117,6 +132,8 @@ export default function InfoTickets() {
           ))}
         </div>
       </section>
+
+
 
       {/* Sponsorship */}
       <section className="px-margin-mobile bg-white pt-8 pb-32">
