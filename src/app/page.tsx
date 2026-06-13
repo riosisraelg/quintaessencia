@@ -11,8 +11,8 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             alt="Hanns Myhulots" 
-            className="w-full h-full object-cover grayscale-filter" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHWUQ4CWJfPppyl8djfX7gFBRIIjcUdu9_U-KPavPDdZM0kStYeXz7nnFTVqvx2UuoI_HfuGop1Li7eNinaj5RqevHn1mglPOyWm_V2kpnO0ZZD49R6V1g6dDJvJ1x8YJhr62zwRHdzQPzuB4gWyHnpR5ngArOVFmtLGH--NjoeYuw9PoG4_lAiEVaD3Pyf6ZkL7PLk4Pj8WbjYky-3VHIab_kMPa9EYWyZimew7JZnz5O5MM8PKIQU2uh3lPltCRs24DNJCVjFcw" 
+            className="w-full h-full object-cover" 
+            src="/hero-info.jpeg" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* Action Buttons */}
-      <section className="p-margin-mobile bg-white border-b-4 border-on-surface flex flex-col md:flex-row gap-4">
+      <section className="p-margin-mobile pb-32 md:pb-12 bg-white border-b-4 border-on-surface flex flex-col md:flex-row gap-4">
         <div className="flex-1">
           <CalendarMenu />
         </div>

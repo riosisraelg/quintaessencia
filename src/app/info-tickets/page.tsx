@@ -10,19 +10,7 @@ export const metadata = {
 export default function InfoTickets() {
   return (
     <>
-      {/* Header Image & Slogan */}
-      <div className="border-b-4 border-on-surface mb-10 overflow-hidden bg-on-surface" id="hero">
-        <img 
-          alt="Biography Header" 
-          className="w-full h-[60vh] md:h-[70vh] object-cover object-center" 
-          src="/hero-info.jpeg" 
-        />
-        <div className="p-6 bg-on-surface text-white">
-          <h2 className="font-display-2xl text-[40px] uppercase leading-none tracking-tighter italic">
-            Mi testimonio. Mi propósito. Mi impacto.
-          </h2>
-        </div>
-      </div>
+
 
       {/* Purchase Process */}
       <section className="px-margin-mobile pt-8 pb-16 bg-on-surface text-background border-b-4 border-on-surface">
